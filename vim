@@ -1,1 +1,0 @@
-/home/rgarcia/.dotfiles/vim
