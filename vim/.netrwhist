@@ -1,8 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/rgarcia/.dotfiles/bash/completion_scripts'
-let g:netrw_dirhist_2='/home/rgarcia/code/panelize'
-let g:netrw_dirhist_3='/home/rgarcia/code/panelize/features'
-let g:netrw_dirhist_4='/home/rgarcia/code/panelize/app/views/brands'
-let g:netrw_dirhist_5='/home/rgarcia/code/panelize/features'
-let g:netrw_dirhist_6='/home/rgarcia/code/panelize/config/locales'
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/rgarcia'
+let g:netrw_dirhist_2='/home/rgarcia/code/backtualize'
+let g:netrw_dirhist_3='/home/rgarcia/code/backtualize/app'
+let g:netrw_dirhist_4='/home/rgarcia/code/backtualize/app/models'

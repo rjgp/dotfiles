@@ -83,7 +83,7 @@ nnoremap <C-y> 2<C-y>
 
 " Folding rules {{{
 set foldenable                  " enable folding
-set foldcolumn=2                " add a fold column
+" set foldcolumn=2                " add a fold column
 set foldmethod=marker           " detect triple-{ style fold markers
 set foldlevelstart=99           " start out with everything folded
 set foldopen=block,hor,insert,jump,mark,percent,quickfix,search,tag,undo
@@ -165,11 +165,7 @@ function! QFixToggle(forced)
 endfunction
 " }}}
 
-" Highlighting {{{
-if &t_Co > 2 || has("gui_running")
-   syntax on                    " switch syntax highlighting on, when the terminal has colors
-endif
-" }}}
+syntax on                    " switch syntax highlighting on, when the terminal has colors
 
 " Shortcut mappings {{{
 
@@ -490,12 +486,12 @@ autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "norm
 " }}}
 
 " Common abbreviations / misspellings {{{
-source ~/.vim/autocorrect.vim
+" source ~/.vim/autocorrect.vim
 " }}}
 
 " Extra vi-compatibility {{{
 " set extra vi-compatible options
-set cpoptions+=$     " when changing a line, don't redisplay, but put a '$' at
+" set cpoptions+=$     " when changing a line, don't redisplay, but put a '$' at
                      " the end during the change
 set formatoptions-=o " don't start new lines w/ comment leader on pressing 'o'
 au filetype vim set formatoptions-=o
@@ -504,7 +500,7 @@ au filetype vim set formatoptions-=o
 " }}}
 
 " Extra user or machine specific settings {{{
-source ~/.vim/user.vim
+" source ~/.vim/user.vim
 " }}}
 
 " Creating underline/overline headings for markup languages
@@ -516,8 +512,11 @@ nnoremap <leader>4 yypVr-
 nnoremap <leader>5 yypVr^
 nnoremap <leader>6 yypVr"
 
+syntax enable
 set bg=dark
-colorscheme default
+colorscheme kib_darktango
+
+imap <S-CR> <CR><CR>end><Esc>-cc
 
 " Open current path in a new tab
 :noremap <Leader>t :tabnew .<cr>
