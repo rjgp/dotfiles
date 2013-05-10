@@ -1,0 +1,90 @@
+
+Xft.dpi: 96
+Xft.antialias: false
+Xft.rgba: rgb
+Xft.hinting: true
+Xft.hintstyle: hintslight
+
+!-------------------------------------------------------------------------------
+! URxvt settings
+! Colours lifted from Solarized (http://ethanschoonover.com/solarized)
+! More info at:
+! http://pod.tst.eu/http://cvs.schmorp.de/rxvt-unicode/doc/rxvt.1.pod
+!-------------------------------------------------------------------------------
+
+URxvt.depth: 32
+URxvt.geometry: 90x30
+URxvt.transparent: false
+URxvt.fading: 0
+! URxvt.urgentOnBell: true
+! URxvt.visualBell: true
+URxvt.loginShell: true
+URxvt.saveLines: 50
+URxvt.internalBorder: 3
+URxvt.lineSpace: 0
+
+! Fonts
+URxvt.allow_bold: false
+URxvt*font: xft:Inconsolata:pixelsize=12.5:antialias=true
+URxvt*boldFont: xft:Inconsolata:pixelsize=12.5:antialias=true
+
+! Fix font space
+URxvt*letterSpace: -1
+
+! Scrollbar
+URxvt.scrollStyle: rxvt
+URxvt.scrollBar: false
+
+! Perl extensions
+URxvt.perl-ext-common: default,matcher
+URxvt.matcher.button: 1
+URxvt.urlLauncher: firefox
+
+! Cursor
+URxvt.cursorBlink: true
+URxvt.cursorColor: #657b83
+URxvt.cursorUnderline: false
+
+! Pointer
+URxvt.pointerBlank: true
+
+!---- URxvt - General settings {
+URxvt*:borderLess:                    true
+URxvt*cursorBlink:                    true
+URxvt*jumpScroll:                     true
+URxvt*scrollBar:                      false
+URxvt*scrollTtyOutput:                false
+URxvt*scrollTtyKeypress:              true
+URxvt*urgentOnBell:                   true
+URxvt*visualBell:                     false
+URxvt*matcher.button:                 1
+
+!---- Light URxvt (Solarized Light, 11pt)
+URxvt*fading:                 0
+URxvt*background:             #fdf6e3
+URxvt*foreground:             #839496
+URxvt*fadeColor:              #fdf6e3
+URxvt*cursorColor:            #586e75
+URxvt*pointerColorBackground: #93a1a1
+URxvt*pointerColorForeground: #586e75
+URxvt*color0:                 #073642
+LURxvt*color8:                 #fdf6e3
+URxvt*color10:                #93a1a1
+URxvt*color11:                #839496
+URxvt*color12:                #657b83
+URxvt*color14:                #586e75
+URxvt*color7:                 #839496
+URxvt*color15:                #002b36
+!---- Default URxvt (Solarized Dark, 12px)
+URxvt*colorUL:                        #859900
+URxvt*colorBD:                        #268bd2
+URxvt*color8:                         #002b36
+URxvt*color1:                         #dc322f
+URxvt*color9:                         #cb4b16
+URxvt*color2:                         #859900
+URxvt*color3:                         #b58900
+URxvt*color4:                         #268bd2
+URxvt*color5:                         #d33682
+URxvt*color13:                        #6c71c4
+URxvt*color6:                         #2aa198
+
