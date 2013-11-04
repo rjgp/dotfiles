@@ -96,8 +96,8 @@ if has("gui_running")
 else
   set t_Co=256
   let g:solarized_termcolors=256
-  set background=light
-  colorscheme solarized
+  set background=dark
+  colorscheme kib_darktango
 endif
 
 set mouse=a
@@ -106,8 +106,6 @@ set mouse=a
 :noremap <Leader>v :vsp .<cr>
 :noremap <Leader>h :split .<cr>
 
-nnoremap <C-h> :tabprevious<CR>
-nnoremap <C-l> :tabnext<CR>
 "" Move current window to previous tab
 function! MoveToPrevTab()
   "there is only one window
